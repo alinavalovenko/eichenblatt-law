@@ -1,0 +1,29 @@
+{
+  "name": "echenblatt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglifyjs": "^0.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinavalovenko/eichenblatt-law.git"
+  },
+  "author": "Alina Valovenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alinavalovenko/eichenblatt-law/issues"
+  },
+  "homepage": "https://github.com/alinavalovenko/eichenblatt-law#readme"
+}
