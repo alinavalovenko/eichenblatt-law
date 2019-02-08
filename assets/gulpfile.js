@@ -29,5 +29,3 @@ gulp.task('libs',  done => {
         .pipe(gulp.dest('./js/'));
     done();
 });
-
-// gulp.task('default', ['sass','scripts','libs' ]);
