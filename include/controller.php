@@ -33,7 +33,31 @@ function the_header_bg_url() {
 /***
  * Display leave comment link on the blog index page
  */
-function leave_comment_btn(){
+function leave_comment_btn() {
 	$comment_link = '#leave-comment-' . get_the_ID();
-	return '<a href="' . $comment_link . '" class="leave-comment-link">' . esc_html__('Leave Comment') . '</a>';
+
+	return '<a href="' . $comment_link . '" class="leave-comment-link">' . esc_html__( 'Leave Comment' ) . '</a>';
+}
+
+/***
+ * Get blog items list
+ *
+ * @param int $count
+ * @param array $post_types
+ *
+ * @return array
+ */
+function get_blog_items( $count = 3, $post_types = [ 'post' ] ) {
+	$list = [];
+	$args = array(
+		'post_type'   => $post_types,
+		'numberposts' => $count,
+		'post_status' => 'published',
+		'orderby'     => 'date',
+		'order'       => 'DESC',
+	);
+
+	$list = get_posts($args);
+
+	return $list;
 }

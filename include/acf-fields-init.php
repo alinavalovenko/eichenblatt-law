@@ -828,7 +828,7 @@ quis nostrud exercitation ullamco<br/>',
 				'label' => 'Blog option',
 				'name' => 'blog_option',
 				'type' => 'number',
-				'instructions' => 'How many posts shoult be displayed?',
+				'instructions' => 'How many posts should be displayed?',
 				'required' => 0,
 				'conditional_logic' => array(
 					array(
