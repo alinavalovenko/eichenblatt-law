@@ -55,28 +55,39 @@
                         <a href="<?php echo $our_attorneys_data['join_us_link']; ?>"><?php echo $our_attorneys_data['join_us_button_text'] ?></a>
                     </div>
                 </div>
-                <?php if(!empty($our_attorneys_data['our_attorneys'])): ?>
-                <div class="row our-attorneys">
-	                <?php foreach ($our_attorneys_data['our_attorneys'] as $item):  ?>
-                    <div class="col-xs-12 col-sm-4">
-                        <h4><?php echo $item->post_title;?></h4>
-                        <div class="position"><?php the_field('position', $item->ID);?></div>
-                        <div class="description"><?php echo $item->post_content;?></div>
-                        <div class="social-links">
-                            <?php $social_link = get_field('social_media_links', $item->ID); ?>
-                            <a href="<?php echo $social_link['facebook']?>"><i class="fab fa-facebook-f"></i></a>
-                            <a href="<?php echo $social_link['twitter']?>"><i class="fab fa-twitter"></i></a>
-                            <a href="<?php echo $social_link['google-plus']?>"><i class="fab fa-google-plus-g"></i></a>
-                        </div>
+				<?php if ( ! empty( $our_attorneys_data['our_attorneys'] ) ): ?>
+                    <div class="row our-attorneys">
+						<?php foreach ( $our_attorneys_data['our_attorneys'] as $item ): ?>
+                            <div class="col-xs-12 col-sm-4">
+                                <h4><?php echo $item->post_title; ?></h4>
+                                <div class="position"><?php the_field( 'position', $item->ID ); ?></div>
+                                <div class="description"><?php echo $item->post_content; ?></div>
+                                <div class="social-links">
+									<?php $social_link = get_field( 'social_media_links', $item->ID ); ?>
+                                    <a href="<?php echo $social_link['facebook'] ?>"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    <a href="<?php echo $social_link['twitter'] ?>"><i class="fab fa-twitter"></i></a>
+                                    <a href="<?php echo $social_link['google-plus'] ?>"><i
+                                                class="fab fa-google-plus-g"></i></a>
+                                </div>
+                            </div>
+						<?php endforeach; ?>
+                        <a href="<?php echo $our_attorneys_data['attorneys_page']; ?>"><?php echo $our_attorneys_data['view_more_button_text']; ?></a>
                     </div>
-                    <?php endforeach; ?>
-                </div>
-                <?php endif; ?>
+				<?php endif; ?>
             </div>
 		<?php endif; ?>
 
 		<?php if ( $experience ): $experience_data = get_field( 'experience_options' ); ?>
-            about_us_options
+            <div class="experience-section container-fluid text-center">
+                <h2><?php echo $experience_data['section_title'] ?></h2>
+                <div class="description">
+					<?php echo $experience_data['title_description'] ?>
+                </div>
+                <a href="<?php echo $experience_data['contact_us_link']; ?>">
+					<?php echo $experience_data['contact_us_button_text']; ?>
+                </a>
+            </div>
 		<?php endif; ?>
 
 		<?php if ( $blog_section ): $blog_section_data = get_field( 'blog_option' ); ?>
