@@ -4,10 +4,11 @@
  */
 ?>
 
-<?php get_header('home'); ?>
+<?php get_header( 'home' ); ?>
 
-<?php if(!empty(get_field('banner_section', 'option'))):?>
-<? echo 'Home banner section'; ?>
-<?php endif; ?>
-
+<?php if ( is_home() ):
+	get_template_part('template-parts/content/blog');
+else:
+	get_template_part('template-parts/content/home');
+endif; ?>
 <?php get_footer(); ?>

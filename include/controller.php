@@ -29,3 +29,11 @@ function the_header_bg_url() {
 
 	echo 'style="background-image:url(' . $bg_url . ');"';
 }
+
+/***
+ * Display leave comment link on the blog index page
+ */
+function leave_comment_btn(){
+	$comment_link = '#leave-comment-' . get_the_ID();
+	return '<a href="' . $comment_link . '" class="leave-comment-link">' . esc_html__('Leave Comment') . '</a>';
+}

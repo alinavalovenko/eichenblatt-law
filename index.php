@@ -1,7 +1,7 @@
-<?php get_header(); ?>
+<section id="primary" class="content-area">
+    <main id="main" class="site-main">
 
-	<div class="elaw-inner container">
-		Content here
-	</div>
+	INDEX PAGE
 
-<?php get_footer(); ?>
+    </main><!-- .site-main -->
+</section><!-- .content-area -->
