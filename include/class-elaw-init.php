@@ -62,6 +62,8 @@ if ( ! class_exists( 'ELaw_Init' ) ) {
 		function elaw_enqueue_scripts() {
 			wp_enqueue_style( 'elaw-styles', ELAW_ASSETS_URL . '/css/styles.min.css' );
 			wp_enqueue_style( 'elaw-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' );
+			wp_enqueue_style( 'elaw-icons', 'https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+
 			wp_enqueue_script( 'elaw-jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', '', '3.3.1', true );
 			wp_localize_script( 'elaw-js-prop', 'elawInit', $this->elaw_global_js_properties() );
 			wp_enqueue_script( 'elaw-libs', ELAW_ASSETS_URL . '/js/libs.min.js', array( 'elaw-jquery' ), '', true );
