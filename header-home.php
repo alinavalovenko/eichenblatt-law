@@ -21,13 +21,13 @@
     <div class="elaw-header" <?php set_section_background(); ?>>
         <div class="container">
             <div class="row header-bar">
-                <div class="col-xs-4">
+                <div class="col-sm-4">
 					<?php elaw_get_menu_list( 'left-menu', 'elaw-left-menu' ); ?>
                 </div>
-                <div class="col-xs-4">
-                    <a href="<?php echo get_site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
+                <div class="col-sm-4">
+                    <a href="<?php echo get_site_url(); ?>" class="site-logo"><?php bloginfo( 'name' ); ?></a>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-sm-4">
 					<?php elaw_get_menu_list( 'right-menu', 'elaw-right-menu' ); ?>
                 </div>
             </div>

@@ -95,10 +95,10 @@ if ( ! class_exists( 'ELaw_Init' ) ) {
 		function register_widgets_area() {
 			register_sidebar( array(
 				'name'          => esc_html__( 'Footer Widgets' ),
-				'id'            => "footer-area",
+				'id'            => "elaw-footer-area",
 				'description'   => '',
 				'class'         => 'elaw-footer-widget',
-				'before_widget' => '<div class="widget %2$s">',
+				'before_widget' => '<div class="footer-widget col-xs-12 col-sm-3">',
 				'after_widget'  => "</div>\n",
 				'before_title'  => '<h4 class="elaw-footer-widget-title">',
 				'after_title'   => "</h4>\n",
