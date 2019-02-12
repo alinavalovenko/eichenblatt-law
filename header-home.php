@@ -40,9 +40,13 @@
 				<?php if ( $big_banner ): $banner_section_data = get_field( 'banner_section_options' ); ?>
                     <div class="banner-section">
                         <h1><?php echo $banner_section_data['home_page_main_text'] ?></h1>
-                        <div><?php echo $banner_section_data['introduction_text'] ?></div>
-                        <a href="<?php echo $banner_section_data['action_button_link'] ?>"
-                           class="elaw-link"><?php echo $banner_section_data['action_button_text'] ?></a>
+                        <div class="description"><?php echo $banner_section_data['introduction_text'] ?>
+                            <div class="elaw-link">
+                                <img src="<?php echo ELAW_LINE; ?>" alt="yellow line">
+                                <a href="<?php echo $banner_section_data['action_button_link'] ?>"><?php echo $banner_section_data['action_button_text'] ?></a>
+                            </div>
+                        </div>
+
                     </div>
 				<?php endif; ?>
             </div>

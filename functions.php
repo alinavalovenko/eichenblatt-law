@@ -17,7 +17,9 @@ if ( ! defined( 'ELAW_ASSETS_DIR' ) ) {
 if ( ! defined( 'ELAW_ASSETS_URL' ) ) {
 	define( 'ELAW_ASSETS_URL', ELAW_URL. '/assets');
 }
-
+if ( ! defined( 'ELAW_LINE' ) ) {
+	define( 'ELAW_LINE', ELAW_ASSETS_URL. '/images/line.svg');
+}
 if ( ! defined( 'ELAW_DEFAULT_IMG_URL' ) ) {
 	define( 'ELAW_DEFAULT_IMG_URL', ELAW_URL . '/assets/images/home/bg-banner.jpg' );
 }

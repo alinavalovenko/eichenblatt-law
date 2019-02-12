@@ -4,28 +4,37 @@
 
 html, body {
   font-family: "Palatino Linotype", 'Palatino', 'Palanquin', sans-serif !important;
+  font-size: 16px;
 }
+
 a.site-logo {
   border-top: 1px solid;
   padding: 15px 10px;
+  text-transform:uppercase;
 }
+
 header.site-header {
   color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   a {
     color: #fff;
   }
-  a:hover{
+
+  a:hover {
     color: #f1bc00;
     opacity: 1;
     text-decoration: none;
   }
+
   .elaw-header-overlay {
     background-color: rgba(0, 0, 0, 0.7);
   }
 
   .header-bar {
     padding-top: 40px;
-    border-bottom: solid 3px #a9aaad;
+    border-bottom: solid 2px #a9aaad;
     opacity: 0.8;
   }
 
@@ -38,12 +47,46 @@ header.site-header {
     list-style-type: none;
     display: inline-block;
   }
-  nav ul li a{
-    line-height: 15px;
+
+  nav ul li a {
+    line-height: 18px;
     padding: 15px 10px;
   }
-  nav ul li a:hover{
-    border-bottom: 7px solid;
+
+  nav ul li a:hover {
+    border-bottom: 5px solid;
   }
 
+  .banner-section {
+    padding: 20% 0;
+
+    h1 {
+      font-size: 4em;
+      line-height: 1.5em;
+    }
+
+    .description {
+      max-width: 50%;
+      font-size: 1.2em;
+      padding: 30px 0 0 5%;
+    }
+
+    .elaw-link {
+      width: 100%;
+      padding: 30px 0;
+
+      a {
+        display: inline-block;
+        background-color: rgba(241, 188, 0, 0.6);
+        padding: 0 10px;
+        text-transform:uppercase;
+      }
+
+      img {
+        width: 100px;
+      }
+    }
+  }
 }
+
+

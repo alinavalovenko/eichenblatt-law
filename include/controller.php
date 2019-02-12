@@ -31,7 +31,7 @@ function set_section_background($bg_url = ELAW_DEFAULT_IMG_URL) {
 		$bg_url = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 	}
 
-	echo 'style="background-image:url(' . $bg_url . ');"';
+	echo 'style="background-image:url(' . $bg_url . ')"';
 }
 
 /***
