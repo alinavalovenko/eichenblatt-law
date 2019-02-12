@@ -14,6 +14,10 @@ if ( ! defined( 'ELAW_ASSETS_DIR' ) ) {
 	define( 'ELAW_ASSETS_DIR', ELAW_DIR . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR );
 }
 
+if ( ! defined( 'ELAW_ASSETS_URL' ) ) {
+	define( 'ELAW_ASSETS_URL', ELAW_URL. '/assets');
+}
+
 if ( ! defined( 'ELAW_DEFAULT_IMG_URL' ) ) {
 	define( 'ELAW_DEFAULT_IMG_URL', ELAW_URL . '/assets/images/home/bg-banner.jpg' );
 }

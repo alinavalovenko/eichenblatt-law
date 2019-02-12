@@ -1,0 +1,35 @@
+/************HEADER
+*/
+@import url("https://fonts.googleapis.com/css?family=Palanquin:400,600,700");
+html, body {
+  font-family: "Palatino Linotype", 'Palatino', 'Palanquin', sans-serif !important; }
+
+a.site-logo {
+  border-top: 1px solid;
+  padding: 15px 10px; }
+
+header.site-header {
+  color: #fff; }
+  header.site-header a {
+    color: #fff; }
+  header.site-header a:hover {
+    color: #f1bc00;
+    opacity: 1;
+    text-decoration: none; }
+  header.site-header .elaw-header-overlay {
+    background-color: rgba(0, 0, 0, 0.7); }
+  header.site-header .header-bar {
+    padding-top: 40px;
+    border-bottom: solid 3px #a9aaad;
+    opacity: 0.8; }
+  header.site-header nav ul {
+    display: block;
+    padding: 0; }
+  header.site-header nav ul li {
+    list-style-type: none;
+    display: inline-block; }
+  header.site-header nav ul li a {
+    line-height: 15px;
+    padding: 15px 10px; }
+  header.site-header nav ul li a:hover {
+    border-bottom: 7px solid; }

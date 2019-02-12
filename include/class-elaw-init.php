@@ -63,7 +63,7 @@ if ( ! class_exists( 'ELaw_Init' ) ) {
 
 
 		function elaw_enqueue_scripts() {
-			wp_enqueue_style( 'elaw-styles', ELAW_ASSETS_URL . '/css/styles.min.css' );
+			wp_enqueue_style( 'elaw-styles', ELAW_ASSETS_URL . '/css/styles.css' );
 			wp_enqueue_style( 'elaw-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' );
 			wp_enqueue_style( 'elaw-icons', 'https://use.fontawesome.com/releases/v5.7.1/css/all.css' );
 

@@ -29,3 +29,7 @@ gulp.task('libs',  done => {
         .pipe(gulp.dest('./js/'));
     done();
 });
+
+gulp.task('watch:sass', function () {
+    gulp.watch('./dev/styles/*.scss', ['sass']);
+});

@@ -18,27 +18,33 @@
 </head>
 <body <?php body_class(); ?> >
 <div class="site-wrapper">
-    <div class="elaw-header" <?php set_section_background(); ?>>
-        <div class="container">
-            <div class="row header-bar">
-                <div class="col-sm-4">
-					<?php elaw_get_menu_list( 'left-menu', 'elaw-left-menu' ); ?>
-                </div>
-                <div class="col-sm-4">
-                    <a href="<?php echo get_site_url(); ?>" class="site-logo"><?php bloginfo( 'name' ); ?></a>
-                </div>
-                <div class="col-sm-4">
-					<?php elaw_get_menu_list( 'right-menu', 'elaw-right-menu' ); ?>
+    <header class="site-header" <?php set_section_background(); ?>>
+        <div class="elaw-header-overlay">
+            <div class="header-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 text-left">
+							<?php elaw_get_menu_list( 'left-menu', 'elaw-left-menu' ); ?>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a href="<?php echo get_site_url(); ?>" class="site-logo"><?php bloginfo( 'name' ); ?></a>
+                        </div>
+                        <div class="col-sm-4 text-right">
+							<?php elaw_get_menu_list( 'right-menu', 'elaw-right-menu' ); ?>
+                        </div>
+                    </div>
                 </div>
             </div>
-			<?php $big_banner = get_field( 'banner_section' ) ? get_field( 'banner_section' ) : false; ?>
-			<?php if ( $big_banner ): $banner_section_data = get_field( 'banner_section_options' ); ?>
-                <div class="row banner-section">
-                    <h1><?php echo $banner_section_data['home_page_main_text'] ?></h1>
-                    <div><?php echo $banner_section_data['introduction_text'] ?></div>
-                    <a href="<?php echo $banner_section_data['action_button_link'] ?>"
-                       class="elaw-link"><?php echo $banner_section_data['action_button_text'] ?></a>
-                </div>
-			<?php endif; ?>
+            <div class="container">
+				<?php $big_banner = get_field( 'banner_section' ) ? get_field( 'banner_section' ) : false; ?>
+				<?php if ( $big_banner ): $banner_section_data = get_field( 'banner_section_options' ); ?>
+                    <div class="banner-section">
+                        <h1><?php echo $banner_section_data['home_page_main_text'] ?></h1>
+                        <div><?php echo $banner_section_data['introduction_text'] ?></div>
+                        <a href="<?php echo $banner_section_data['action_button_link'] ?>"
+                           class="elaw-link"><?php echo $banner_section_data['action_button_text'] ?></a>
+                    </div>
+				<?php endif; ?>
+            </div>
         </div>
-    </div>
+    </header>
