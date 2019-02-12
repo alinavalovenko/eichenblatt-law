@@ -27,6 +27,9 @@ if ( ! class_exists( 'ELaw_Init' ) ) {
 
 			add_action( 'init', array( $this, 'register_menus_area' ) );
 
+			add_action( 'widgets_init', array( $this, 'register_widgets_area' ) );
+
+
 		}
 
 		function elaw_acf_init() {
@@ -62,7 +65,7 @@ if ( ! class_exists( 'ELaw_Init' ) ) {
 		function elaw_enqueue_scripts() {
 			wp_enqueue_style( 'elaw-styles', ELAW_ASSETS_URL . '/css/styles.min.css' );
 			wp_enqueue_style( 'elaw-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' );
-			wp_enqueue_style( 'elaw-icons', 'https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+			wp_enqueue_style( 'elaw-icons', 'https://use.fontawesome.com/releases/v5.7.1/css/all.css' );
 
 			wp_enqueue_script( 'elaw-jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', '', '3.3.1', true );
 			wp_localize_script( 'elaw-js-prop', 'elawInit', $this->elaw_global_js_properties() );
@@ -79,14 +82,27 @@ if ( ! class_exists( 'ELaw_Init' ) ) {
 			return $properties;
 		}
 
-		function register_menus_area(){
+		function register_menus_area() {
 			register_nav_menus(
 				array(
-					'left-menu' => esc_html__( 'Left Menu', 'elaw' ),
+					'left-menu'   => esc_html__( 'Left Menu', 'elaw' ),
 					'right-menu'  => esc_html__( 'Right Menu', 'elaw' ),
-					'mobile-menu'  => esc_html__( 'Mobile Menu', 'elaw' ),
+					'mobile-menu' => esc_html__( 'Mobile Menu', 'elaw' ),
 				)
 			);
+		}
+
+		function register_widgets_area() {
+			register_sidebar( array(
+				'name'          => esc_html__( 'Footer Widgets' ),
+				'id'            => "footer-area",
+				'description'   => '',
+				'class'         => 'elaw-footer-widget',
+				'before_widget' => '<div class="widget %2$s">',
+				'after_widget'  => "</div>\n",
+				'before_title'  => '<h4 class="elaw-footer-widget-title">',
+				'after_title'   => "</h4>\n",
+			) );
 		}
 	}
 

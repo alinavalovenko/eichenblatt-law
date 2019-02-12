@@ -18,7 +18,7 @@
 </head>
 <body <?php body_class(); ?> >
 <div class="site-wrapper">
-    <div class="elaw-header" <?php the_header_bg_url(); ?>>
+    <div class="elaw-header" <?php set_section_background(); ?>>
         <div class="container">
             <div class="row header-bar">
                 <div class="col-xs-4">

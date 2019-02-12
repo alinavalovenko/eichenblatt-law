@@ -4,10 +4,10 @@
 <?php $experience = get_field( 'experience' ) ? get_field( 'experience' ) : false; ?>
 <?php $blog_section = get_field( 'blog_section' ) ? get_field( 'blog_section' ) : false; ?>
 <?php $contact_us = get_field( 'contact_us' ) ? get_field( 'contact_us' ) : false; ?>
-<?php global $post;?>
+<?php global $post; ?>
 
 
-<section id="primary" class="content-area container">
+<section id="primary" class="content-area">
     <main id="main" class="site-main">
 		<?php if ( $about_us ): $about_us_data = get_field( 'about_us_options' ); ?>
             <div class="container about-us-section">
@@ -98,19 +98,34 @@
 					<?php $blog_list = get_blog_items();
 					if ( ! empty( $blog_list ) ):
 						foreach ( $blog_list as $post ):
-                            setup_postdata($post);?>
+							setup_postdata( $post ); ?>
                             <div class="col-xs-12 col-sm-4">
-	                            <?php get_template_part( 'template-parts/blog/item' ); ?>
+								<?php get_template_part( 'template-parts/blog/item' ); ?>
                             </div>
-                        <?php wp_reset_postdata();?>
+							<?php wp_reset_postdata(); ?>
 						<?php endforeach; ?>
 					<?php endif; ?>
                 </div>
             </div>
 		<?php endif; ?>
 
-		<?php if ( $contact_us ): $contact_us_data = get_field( 'contact_us_option' ); ?>
-            about_us_options
+		<?php if ( $contact_us ):
+			$contact_us_data = get_field( 'contact_us_option' );
+			$contact_us_bg = get_field( 'background_image_for_section', 'option' );
+			$contact_form_code = get_field( 'contact_form_shortcode', 'option' );
+			?>
+            <div id="content-us"
+                 class="container-fluid contact-us-section" <?php set_section_background( $contact_us_bg ); ?>>
+                <div class="container">
+                    <h3><?php echo $contact_us_data['section_title']; ?></h3>
+                    <div class="description">
+						<?php echo $contact_us_data['section_description']; ?>
+                    </div>
+                    <div class="elaw-contact-form">
+						<?php do_shortcode( $contact_form_code ); ?>
+                    </div>
+                </div>
+            </div>
 		<?php endif; ?>
     </main><!-- .site-main -->
 </section><!-- .content-area -->

@@ -20,9 +20,13 @@ function elaw_get_menu_list( $location = 'left-menu', $container_class = 'elaw-l
 
 /***
  * Display link of big background welcome banner
+ *
+ * @param string $bg_url
  */
-function the_header_bg_url() {
-	$bg_url = ELAW_DEFAULT_IMG_URL;
+function set_section_background($bg_url = ELAW_DEFAULT_IMG_URL) {
+	if(empty($bg_url)){
+		$bg_url = ELAW_DEFAULT_IMG_URL;
+	}
 	if ( has_post_thumbnail() ) {
 		$bg_url = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 	}
