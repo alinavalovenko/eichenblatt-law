@@ -395,3 +395,44 @@ header.site-header {
   }
 
 }
+
+
+//////////////////////////////
+////////////contact-us-section
+/////////////////////////////
+.contact-us-section{
+  padding: 100px 0;
+  color: #fff;
+}
+
+////////////////////////////
+////////// FOOTER /////////
+///////////////////////////
+footer.site-footer-wrap {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0 20px;
+
+  a {
+    color: #fff;
+  }
+
+  .elaw-footer-widget-title {
+    color: #F1BC00;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+
+  .footer-bar {
+    margin: 100px auto 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .copyright.text-center {
+    border-top: solid 2px rgba(255,255,255, 1);
+    padding-top: 15px;
+    opacity: 0.5;
+    font-size: 0.8em;
+  }
+}

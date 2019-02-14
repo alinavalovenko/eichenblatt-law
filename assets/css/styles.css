@@ -267,3 +267,27 @@ header.site-header {
   .blog-section span {
     color: #a9a9a9;
     text-transform: capitalize; }
+
+.contact-us-section {
+  padding: 100px 0;
+  color: #fff; }
+
+footer.site-footer-wrap {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0 20px; }
+  footer.site-footer-wrap a {
+    color: #fff; }
+  footer.site-footer-wrap .elaw-footer-widget-title {
+    color: #F1BC00;
+    font-size: 1.2em;
+    margin-bottom: 15px; }
+  footer.site-footer-wrap .footer-bar {
+    margin: 100px auto 10px;
+    display: block;
+    text-align: center; }
+  footer.site-footer-wrap .copyright.text-center {
+    border-top: solid 2px white;
+    padding-top: 15px;
+    opacity: 0.5;
+    font-size: 0.8em; }
