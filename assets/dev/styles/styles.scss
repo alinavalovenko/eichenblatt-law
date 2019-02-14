@@ -266,56 +266,68 @@ header.site-header {
     }
   }
 
-  .attorney-csv {
-    border: solid 2px #000;
-    padding: 20px 20px;
-
-    h4 {
-      text-align: center;
-    }
-
-    .position {
-      text-align: center;
-      color: #919191;
-      padding: 10px;
-    }
-
-    .position:after, .description:after {
-      border-bottom: solid 1px #919191;
-      content: ' ';
-      height: 5px;
-      width: 50px;
-      padding: 5px 35px;
-      display: block;
+  .attorney-item {
+    img {
+      max-width: 100%;
+      z-index: -1;
       text-align: center;
       margin: 0 auto;
+      display: block;
     }
 
-    .social-links{
-      text-align: center;
+    .attorney-csv {
+      border: solid 2px #000;
+      padding: 20px 20px;
 
-      a {
-        color: #000;
-        border: solid 1px #000;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        margin-right: 5px;
+      h4 {
+        text-align: center;
+      }
 
-        i.fa-facebook-f{
-          padding: 5px 8px;
-        }
-        i.fab.fa-twitter {
-          padding: 6px 5px;
-        }
-        i.fab.fa-google-plus-g {
-          padding: 5px 3px;
+      .position {
+        text-align: center;
+        color: #919191;
+        padding: 10px;
+      }
+
+      .position:after, .description:after {
+        border-bottom: solid 1px #919191;
+        content: ' ';
+        height: 5px;
+        width: 50px;
+        padding: 5px 35px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .social-links {
+        text-align: center;
+
+        a {
+          color: #000;
+          border: solid 1px #000;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+
+          i.fa-facebook-f {
+            padding: 5px 8px;
+          }
+
+          i.fab.fa-twitter {
+            padding: 6px 5px;
+          }
+
+          i.fab.fa-google-plus-g {
+            padding: 5px 3px;
+          }
         }
       }
     }
   }
 
-  .view-more{
+  .view-more {
     color: #000;
     border: solid 1px #000;
     padding: 10px 50px;
@@ -324,6 +336,36 @@ header.site-header {
     text-decoration: none;
     min-width: 250px;
     text-align: center;
+  }
+}
+
+.experience-section {
+
+  .section-overlay {
+    padding: 100px 0;
+
+    h2:after {
+      border-bottom: solid 2px #F1BC00;
+      width: 100px;
+      content: ' ';
+      height: 2px;
+      line-height: 1em;
+      display: block;
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    a {
+      border: solid 2px;
+      margin: 30px auto;
+      display: block;
+      max-width: 250px;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 10px;
+      white-space: nowrap;
+    }
   }
 }
 
