@@ -250,3 +250,20 @@ header.site-header {
     text-transform: uppercase;
     padding: 10px;
     white-space: nowrap; }
+
+.blog-section {
+  margin: 60px auto; }
+  .blog-section h2 {
+    margin: 50px auto; }
+  .blog-section a {
+    display: block;
+    margin: 15px auto;
+    color: #000;
+    text-decoration: none; }
+  .blog-section img {
+    min-width: 100%;
+    object-fit: cover;
+    height: 250px; }
+  .blog-section span {
+    color: #a9a9a9;
+    text-transform: capitalize; }

@@ -369,3 +369,29 @@ header.site-header {
   }
 }
 
+.blog-section {
+  margin: 60px auto;
+
+  h2 {
+    margin: 50px auto;
+  }
+
+  a {
+    display: block;
+    margin: 15px auto;
+    color: #000;
+    text-decoration: none;
+  }
+
+  img {
+    min-width: 100%;
+    object-fit: cover;
+    height: 250px;
+  }
+
+  span {
+    color: #a9a9a9;
+    text-transform: capitalize;
+  }
+
+}

@@ -56,7 +56,7 @@ function get_blog_items( $count = 3, $post_types = [ 'post' ] ) {
 	$args = array(
 		'post_type'   => $post_types,
 		'numberposts' => $count,
-		'post_status' => 'published',
+		'post_status' => 'publish',
 		'orderby'     => 'date',
 		'order'       => 'DESC',
 	);
