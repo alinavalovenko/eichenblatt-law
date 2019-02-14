@@ -7,6 +7,10 @@ html, body {
   font-size: 16px;
 }
 
+p {
+  text-align: justify;
+}
+
 .section-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
@@ -260,6 +264,66 @@ header.site-header {
     a:hover {
       color: #F1BC00;
     }
+  }
+
+  .attorney-csv {
+    border: solid 2px #000;
+    padding: 20px 20px;
+
+    h4 {
+      text-align: center;
+    }
+
+    .position {
+      text-align: center;
+      color: #919191;
+      padding: 10px;
+    }
+
+    .position:after, .description:after {
+      border-bottom: solid 1px #919191;
+      content: ' ';
+      height: 5px;
+      width: 50px;
+      padding: 5px 35px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .social-links{
+      text-align: center;
+
+      a {
+        color: #000;
+        border: solid 1px #000;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+
+        i.fa-facebook-f{
+          padding: 5px 8px;
+        }
+        i.fab.fa-twitter {
+          padding: 6px 5px;
+        }
+        i.fab.fa-google-plus-g {
+          padding: 5px 3px;
+        }
+      }
+    }
+  }
+
+  .view-more{
+    color: #000;
+    border: solid 1px #000;
+    padding: 10px 50px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-width: 250px;
+    text-align: center;
   }
 }
 

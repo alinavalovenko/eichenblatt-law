@@ -5,6 +5,9 @@ html, body {
   font-family: "Palatino Linotype", 'Palatino', 'Palanquin', sans-serif !important;
   font-size: 16px; }
 
+p {
+  text-align: justify; }
+
 .section-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
@@ -177,3 +180,45 @@ header.site-header {
       transform: translate(-50%, -50%); }
     .attorneys-section .attorneys-introduction a:hover {
       color: #F1BC00; }
+  .attorneys-section .attorney-csv {
+    border: solid 2px #000;
+    padding: 20px 20px; }
+    .attorneys-section .attorney-csv h4 {
+      text-align: center; }
+    .attorneys-section .attorney-csv .position {
+      text-align: center;
+      color: #919191;
+      padding: 10px; }
+    .attorneys-section .attorney-csv .position:after, .attorneys-section .attorney-csv .description:after {
+      border-bottom: solid 1px #919191;
+      content: ' ';
+      height: 5px;
+      width: 50px;
+      padding: 5px 35px;
+      display: block;
+      text-align: center;
+      margin: 0 auto; }
+    .attorneys-section .attorney-csv .social-links {
+      text-align: center; }
+      .attorneys-section .attorney-csv .social-links a {
+        color: #000;
+        border: solid 1px #000;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px; }
+        .attorneys-section .attorney-csv .social-links a i.fa-facebook-f {
+          padding: 5px 8px; }
+        .attorneys-section .attorney-csv .social-links a i.fab.fa-twitter {
+          padding: 6px 5px; }
+        .attorneys-section .attorney-csv .social-links a i.fab.fa-google-plus-g {
+          padding: 5px 3px; }
+  .attorneys-section .view-more {
+    color: #000;
+    border: solid 1px #000;
+    padding: 10px 50px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-width: 250px;
+    text-align: center; }
