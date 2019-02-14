@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2"
   },
   "devDependencies": {
     "del": "^3.0.0",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.1",
     "gulp-uglifyjs": "^0.6.2"

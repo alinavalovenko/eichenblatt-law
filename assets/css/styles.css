@@ -5,6 +5,34 @@ html, body {
   font-family: "Palatino Linotype", 'Palatino', 'Palanquin', sans-serif !important;
   font-size: 16px; }
 
+.section-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  color: #fff;
+  padding: 0;
+  margin: 0; }
+
+.section-title {
+  position: relative; }
+  .section-title h2, .section-title h3, .section-title h4 {
+    display: block;
+    float: left;
+    padding: 0 10px; }
+  .section-title span.text-yellow-line {
+    width: 60px;
+    height: 10px;
+    border-bottom: solid 2px #F1BC00;
+    line-height: 1em;
+    display: block;
+    float: left;
+    position: absolute;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-left: -70px; }
+
+.section-title > * {
+  margin: 10px 0 60px 0; }
+
 a.site-logo {
   border-top: 1px solid;
   padding: 15px 10px;
@@ -13,7 +41,8 @@ a.site-logo {
 header.site-header {
   color: #fff;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 100vh; }
   header.site-header a {
     color: #fff; }
   header.site-header a:hover {
@@ -21,7 +50,8 @@ header.site-header {
     opacity: 1;
     text-decoration: none; }
   header.site-header .elaw-header-overlay {
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100vh; }
   header.site-header .header-bar {
     padding-top: 40px;
     border-bottom: solid 2px #a9aaad;
@@ -38,7 +68,7 @@ header.site-header {
   header.site-header nav ul li a:hover {
     border-bottom: 5px solid; }
   header.site-header .banner-section {
-    padding: 20% 0; }
+    padding: 23% 0; }
     header.site-header .banner-section h1 {
       font-size: 4em;
       line-height: 1.5em; }
@@ -56,3 +86,94 @@ header.site-header {
         text-transform: uppercase; }
       header.site-header .banner-section .elaw-link img {
         width: 100px; }
+
+.about-us-section {
+  padding: 70px 0; }
+  .about-us-section .section-title {
+    position: relative; }
+    .about-us-section .section-title h4 {
+      display: block;
+      max-width: 60%;
+      float: left;
+      padding: 0 10px; }
+    .about-us-section .section-title .grey-dots {
+      width: 10em;
+      height: 10em;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 4px;
+      top: -40px; }
+    .about-us-section .section-title .text-yellow-line {
+      width: 60px;
+      height: 10px;
+      border-bottom: solid 2px #F1BC00;
+      line-height: 1em;
+      padding: 7px;
+      display: block;
+      float: left; }
+  .about-us-section .about-us-description {
+    column-count: 2;
+    border-left: solid 3px #F1BC00;
+    text-align: justify;
+    display: inline-block;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 5em;
+    padding-left: 5em; }
+    .about-us-section .about-us-description a {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin: 10px auto;
+      padding: 10px 15px;
+      border: solid 1px #000;
+      text-transform: uppercase;
+      color: #000; }
+
+.practice-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box; }
+  .practice-section .container {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .practice-section .practice-item img {
+    width: auto;
+    height: 25%;
+    padding: 5px 0; }
+  .practice-section .practice-item h4:after {
+    border-bottom: solid 2px #F1BC00;
+    width: 40px;
+    content: ' ';
+    height: 2px;
+    line-height: 1em;
+    display: block;
+    padding: 3px 0; }
+  .practice-section .practice-item p {
+    text-align: justify;
+    word-wrap: normal;
+    max-width: 85%; }
+
+.attorneys-section {
+  margin: 60px auto; }
+  .attorneys-section .attorneys-introduction {
+    position: relative; }
+    .attorneys-section .attorneys-introduction .section-title .text-yellow-line {
+      padding-top: 5%; }
+    .attorneys-section .attorneys-introduction .description {
+      border-left: solid 2px #F1BC00; }
+      .attorneys-section .attorneys-introduction .description p {
+        margin-top: 10px; }
+    .attorneys-section .attorneys-introduction a {
+      color: #A6A6A6;
+      border: solid 1px;
+      padding: 6px 60px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 0 auto;
+      position: absolute;
+      white-space: nowrap;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    .attorneys-section .attorneys-introduction a:hover {
+      color: #F1BC00; }

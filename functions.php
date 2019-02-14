@@ -20,8 +20,14 @@ if ( ! defined( 'ELAW_ASSETS_URL' ) ) {
 if ( ! defined( 'ELAW_LINE' ) ) {
 	define( 'ELAW_LINE', ELAW_ASSETS_URL. '/images/line.svg');
 }
+if ( ! defined( 'ELAW_GREY_DOTS' ) ) {
+	define( 'ELAW_GREY_DOTS', ELAW_ASSETS_URL. '/images/dots-grey.svg');
+}
 if ( ! defined( 'ELAW_DEFAULT_IMG_URL' ) ) {
 	define( 'ELAW_DEFAULT_IMG_URL', ELAW_URL . '/assets/images/home/bg-banner.jpg' );
+}
+if ( ! defined( 'ELAW_BG_IMG_URL' ) ) {
+	define( 'ELAW_BG_IMG_URL', ELAW_URL . '/assets/images/home/bg-image.jpg' );
 }
 
 

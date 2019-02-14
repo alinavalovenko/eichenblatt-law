@@ -13,7 +13,8 @@
             <div class="container about-us-section">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 section-title">
-                        <h2><?php echo $about_us_data['section_title']; ?></h2>
+                        <div class="grey-dots" <?php set_section_background( ELAW_GREY_DOTS ); ?>></div>
+                        <span class="text-yellow-line"></span> <h4><?php echo $about_us_data['section_title']; ?></h4>
                     </div>
                     <div class="col-xs-12 col-sm-8 about-us-description">
 						<?php echo substr( strip_tags( $about_us_data['about_us_page_link']->post_content ), 0, 500 ); ?>
@@ -25,41 +26,48 @@
 
 		<?php if ( $practice_areas ):
 			$practice_areas_data = get_field( 'practice_areas_options' ); ?>
-            <div class="container-fluid practice-section">
-                <div class="container">
-                    <div class="row">
-                        <h2><?php echo $practice_areas_data['section_title']; ?></h2>
-                    </div>
-					<?php if ( ! empty( $practice_areas_data['practice_areas_items'] ) ): ?>
-                        <div class="row">
-							<?php foreach ( $practice_areas_data['practice_areas_items'] as $item ): ?>
-                                <div class="col-xs-12 col-sm-3">
-                                    <img src="<?php echo $item['item_icon']; ?>"
-                                         alt="<?php echo $item['item_title']; ?>">
-                                    <h3><?php echo $item['item_title']; ?></h3>
-                                    <p><?php echo $item['item_description']; ?></p>
-                                </div>
-
-							<?php endforeach; ?>
+            <div class="practice-section" <?php set_section_background( ELAW_BG_IMG_URL ); ?>>
+                <div class="section-overlay">
+                    <div class="container">
+                        <div class="row section-title">
+                            <span class="text-yellow-line"></span>
+                            <h2><?php echo $practice_areas_data['section_title']; ?></h2>
                         </div>
-					<?php endif; ?>
+						<?php if ( ! empty( $practice_areas_data['practice_areas_items'] ) ): ?>
+                            <div class="row">
+								<?php foreach ( $practice_areas_data['practice_areas_items'] as $item ): ?>
+                                    <div class="col-xs-12 col-sm-3 practice-item">
+                                        <img src="<?php echo $item['item_icon']; ?>"
+                                             alt="<?php echo $item['item_title']; ?>">
+                                        <h4><?php echo $item['item_title']; ?></h4>
+                                        <p><?php echo $item['item_description']; ?></p>
+                                    </div>
+
+								<?php endforeach; ?>
+                            </div>
+						<?php endif; ?>
+                    </div>
                 </div>
             </div>
 		<?php endif; ?>
 
 		<?php if ( $our_attorneys ): $our_attorneys_data = get_field( 'our_attorneys_options' ); ?>
             <div class="container attorneys-section">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-3"><h2><?php echo $our_attorneys_data['section_title'] ?></h2></div>
-                    <div class="col-xs-12 col-sm-6 description"><?php echo $our_attorneys_data['section_description']; ?></div>
-                    <div class="col-xs-12 col-sm-3">
+                <div class="row attorneys-introduction">
+                    <div class="col-xs-12 col-sm-3 section-title">
+                        <span class="text-yellow-line"></span>
+                        <h2><?php echo $our_attorneys_data['section_title']; ?></h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 description"><p><?php echo $our_attorneys_data['section_description']; ?></p></div>
+                    <div class="col-xs-12 col-sm-3 text-right">
                         <a href="<?php echo $our_attorneys_data['join_us_link']; ?>"><?php echo $our_attorneys_data['join_us_button_text'] ?></a>
                     </div>
                 </div>
 				<?php if ( ! empty( $our_attorneys_data['our_attorneys'] ) ): ?>
                     <div class="row our-attorneys">
 						<?php foreach ( $our_attorneys_data['our_attorneys'] as $item ): ?>
-                            <div class="col-xs-12 col-sm-4">
+                            <div class="col-xs-12 col-sm-4 single-attorney">
+								<?php echo get_the_post_thumbnail( $item->ID ); ?>
                                 <h4><?php echo $item->post_title; ?></h4>
                                 <div class="position"><?php the_field( 'position', $item->ID ); ?></div>
                                 <div class="description"><?php echo $item->post_content; ?></div>
@@ -80,14 +88,16 @@
 		<?php endif; ?>
 
 		<?php if ( $experience ): $experience_data = get_field( 'experience_options' ); ?>
-            <div class="experience-section container-fluid text-center">
-                <h2><?php echo $experience_data['section_title'] ?></h2>
-                <div class="description">
-					<?php echo $experience_data['title_description'] ?>
+            <div class="experience-section text-center" <?php set_section_background( ELAW_BG_IMG_URL ); ?>>
+                <div class="section-overlay">
+                    <h2><?php echo $experience_data['section_title'] ?></h2>
+                    <div class="description">
+						<?php echo $experience_data['title_description'] ?>
+                    </div>
+                    <a href="<?php echo $experience_data['contact_us_link']; ?>">
+						<?php echo $experience_data['contact_us_button_text']; ?>
+                    </a>
                 </div>
-                <a href="<?php echo $experience_data['contact_us_link']; ?>">
-					<?php echo $experience_data['contact_us_button_text']; ?>
-                </a>
             </div>
 		<?php endif; ?>
 
