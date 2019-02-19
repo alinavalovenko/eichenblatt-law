@@ -51,7 +51,7 @@ function leave_comment_btn() {
  *
  * @return array
  */
-function get_blog_items( $count = 3, $post_types = [ 'post' ], $offset = 1 ) {
+function get_blog_items( $count = 3, $post_types = [ 'post' ], $offset = 0 ) {
 	$list = [];
 	$args = array(
 		'post_type'   => $post_types,

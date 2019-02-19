@@ -26,7 +26,7 @@
 		<div class="container blog-section">
 			<h2>Blog</h2>
 			<div class="row">
-				<?php $blog_list = get_blog_items(3, 'post', 1);
+				<?php $blog_list = get_blog_items();
 				if ( ! empty( $blog_list ) ):
 					foreach ( $blog_list as $post ):
 						setup_postdata( $post ); ?>
