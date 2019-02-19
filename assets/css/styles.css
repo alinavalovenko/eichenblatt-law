@@ -269,8 +269,24 @@ header.site-header {
     text-transform: capitalize; }
 
 .contact-us-section {
-  padding: 100px 0;
   color: #fff; }
+  .contact-us-section .section-overlay {
+    padding: 100px 0;
+    background-color: rgba(5, 19, 47, 0.7); }
+  .contact-us-section .elaw-contact-form span, .contact-us-section .elaw-contact-form div {
+    width: 100%;
+    margin-top: 15px; }
+  .contact-us-section .elaw-contact-form input, .contact-us-section .elaw-contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #000; }
+  .contact-us-section .elaw-contact-form input[type=submit] {
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: solid 1px;
+    padding: 15px 0;
+    text-transform: uppercase; }
 
 footer.site-footer-wrap {
   background-color: #000;

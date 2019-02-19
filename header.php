@@ -18,6 +18,26 @@
 </head>
 <body <?php body_class(); ?> >
 <div class="site-wrapper">
-    <div class="elaw-header">
-        Header here
-    </div>
+    <header class="page-header" <?php set_section_background(); ?>>
+        <div class="page-header-overlay">
+            <div class="header-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 text-left">
+							<?php elaw_get_menu_list( 'left-menu', 'elaw-left-menu' ); ?>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a href="<?php echo get_site_url(); ?>" class="site-logo"><?php bloginfo( 'name' ); ?></a>
+                        </div>
+                        <div class="col-sm-4 text-right">
+							<?php elaw_get_menu_list( 'right-menu', 'elaw-right-menu' ); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+				<?php the_title( '<h1>', '</h1>' ); ?>
+            </div>
+        </div>
+    </header>
+
