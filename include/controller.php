@@ -51,7 +51,32 @@ function leave_comment_btn() {
  *
  * @return array
  */
-function get_blog_items( $count = 3, $post_types = [ 'post' ] ) {
+function get_blog_items( $count = 3, $post_types = [ 'post' ], $offset = 1 ) {
+	$list = [];
+	$args = array(
+		'post_type'   => $post_types,
+		'numberposts' => $count,
+		'post_status' => 'publish',
+		'orderby'     => 'date',
+		'order'       => 'DESC',
+		'offset' => $offset,
+	);
+
+	$list = get_posts($args);
+
+	return $list;
+}
+
+
+/***
+ * Get blog items list
+ *
+ * @param int $count
+ * @param array $post_types
+ *
+ * @return array
+ */
+function get_featured_blog_item( $count = 1, $post_types = [ 'post' ]) {
 	$list = [];
 	$args = array(
 		'post_type'   => $post_types,
@@ -65,3 +90,4 @@ function get_blog_items( $count = 3, $post_types = [ 'post' ] ) {
 
 	return $list;
 }
+

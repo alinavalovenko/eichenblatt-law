@@ -23,7 +23,21 @@
 
 	</main>
 	<div class="row">
-		Similar Items
+		<div class="container blog-section">
+			<h2>Blog</h2>
+			<div class="row">
+				<?php $blog_list = get_blog_items(3, 'post', 1);
+				if ( ! empty( $blog_list ) ):
+					foreach ( $blog_list as $post ):
+						setup_postdata( $post ); ?>
+						<div class="col-xs-12 col-sm-4">
+							<?php get_template_part( 'template-parts/blog/item' ); ?>
+						</div>
+						<?php wp_reset_postdata(); ?>
+					<?php endforeach; ?>
+				<?php endif; ?>
+			</div>
+		</div>
 	</div>
 </div>
 

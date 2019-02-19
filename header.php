@@ -35,8 +35,15 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-				<?php the_title( '<h1>', '</h1>' ); ?>
+            <div class="container page-title">
+                <h1>
+					<?php
+					if ( is_home() ) {
+						echo get_the_title( get_option( 'page_for_posts', true ) );
+					} else {
+						the_title();
+					} ?>
+                </h1>
             </div>
         </div>
     </header>

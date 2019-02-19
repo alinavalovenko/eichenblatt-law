@@ -11,7 +11,7 @@ p {
   text-align: justify;
 }
 
-.section-overlay {
+.section-overlay, .page-header-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
   color: #fff;
@@ -53,10 +53,13 @@ a.site-logo {
 }
 
 header.site-header {
+  min-height: 100vh;
+}
+
+header.site-header, .page-header {
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
 
   a {
     color: #fff;
@@ -409,11 +412,12 @@ header.site-header {
   }
 
   .elaw-contact-form {
-    span, div{
+    span, div {
       width: 100%;
       margin-top: 15px;
     }
-    input, textarea{
+
+    input, textarea {
       width: 100%;
       padding: 10px;
       border: solid 1px #000;
@@ -460,4 +464,12 @@ footer.site-footer-wrap {
     opacity: 0.5;
     font-size: 0.8em;
   }
+}
+
+//////////////////////////////////
+////// SINGLE PAGE//////////////
+////////////////////////////////
+
+.page-title {
+  padding: 25% 0 3em 0;
 }
