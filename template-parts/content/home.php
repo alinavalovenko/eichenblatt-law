@@ -87,7 +87,8 @@
                                 </div>
                             </div>
 						<?php endforeach; ?>
-                        <a href="<?php echo $our_attorneys_data['attorneys_page']; ?>" class="view-more"><?php echo $our_attorneys_data['view_more_button_text']; ?></a>
+                        <a href="<?php echo $our_attorneys_data['attorneys_page']; ?>"
+                           class="view-more"><?php echo $our_attorneys_data['view_more_button_text']; ?></a>
                     </div>
 				<?php endif; ?>
             </div>
@@ -129,16 +130,23 @@
 			$contact_us_data = get_field( 'contact_us_option' );
 			$contact_us_bg = get_field( 'background_image_for_section', 'option' );
 			$contact_form_code = get_field( 'contact_form_shortcode', 'option' );
+
 			?>
-            <div id="content-us"
-                 class="container-fluid contact-us-section" <?php set_section_background( $contact_us_bg ); ?>>
-                <div class="container">
-                    <h3><?php echo $contact_us_data['section_title']; ?></h3>
-                    <div class="description">
-						<?php echo $contact_us_data['section_description']; ?>
-                    </div>
-                    <div class="elaw-contact-form">
-						<?php do_shortcode( $contact_form_code ); ?>
+            <div id="content-us" class="contact-us-section" <?php set_section_background( $contact_us_bg ); ?>>
+                <div class="section-overlay">
+                    <div class="container">
+                        <h3><?php echo $contact_us_data['section_title']; ?></h3>
+                        <div class="description">
+							<?php echo $contact_us_data['section_description']; ?>
+                        </div>
+                        <div class="elaw-contact-form">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+									<?php echo $contact_form_code; ?>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
