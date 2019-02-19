@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 description">
                         <p><?php echo $our_attorneys_data['section_description']; ?></p></div>
-                    <div class="col-xs-12 col-sm-3 text-right">
+                    <div class="col-xs-12 col-sm-3 join-us">
                         <a href="<?php echo $our_attorneys_data['join_us_link']; ?>"><?php echo $our_attorneys_data['join_us_button_text'] ?></a>
                     </div>
                 </div>
