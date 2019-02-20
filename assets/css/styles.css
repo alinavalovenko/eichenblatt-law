@@ -6,13 +6,13 @@ html, body {
   font-size: 16px; }
 
 p {
-  text-align: justify; }
+  text-align: justify;
+  word-spacing: 2px; }
 
 img {
   max-width: 100%; }
 
 .section-overlay, .page-header-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
   color: #fff;
   padding: 0;
