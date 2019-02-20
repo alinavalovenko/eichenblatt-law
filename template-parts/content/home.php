@@ -14,7 +14,9 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 section-title">
                         <div class="grey-dots" <?php set_section_background( ELAW_GREY_DOTS ); ?>></div>
+                        <span class="title-block">
                         <span class="text-yellow-line"></span> <h4><?php echo $about_us_data['section_title']; ?></h4>
+                        </span>
                     </div>
                     <div class="col-xs-12 col-sm-8 about-us-description">
 						<?php echo substr( strip_tags( $about_us_data['about_us_page_link']->post_content ), 0, 500 ); ?>

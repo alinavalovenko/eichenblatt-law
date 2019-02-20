@@ -90,12 +90,18 @@ header.site-header, .page-header {
       float: left;
       padding: 0 10px; }
     .about-us-section .section-title .grey-dots {
-      width: 10em;
-      height: 10em;
+      min-height: 100%;
+      min-width: 100%;
       background-repeat: no-repeat;
+      position: absolute; }
+    .about-us-section .section-title span.title-block {
+      min-width: 100%;
+      min-height: 100%;
+      display: block;
       position: absolute;
-      left: 4px;
-      top: -40px; }
+      top: -20%;
+      left: 0;
+      transform: translate(0, 50%); }
     .about-us-section .section-title .text-yellow-line {
       width: 60px;
       height: 10px;
@@ -112,6 +118,9 @@ header.site-header, .page-header {
         position: absolute;
         left: 60px;
         top: -1em; }
+      .about-us-section .section-title span.title-block {
+        position: relative;
+        min-height: 2em; }
       .about-us-section .section-title h4 {
         max-width: 85%;
         width: calc(100% - 70px); } }
@@ -272,10 +281,11 @@ header.site-header, .page-header {
     text-transform: capitalize; }
 
 .contact-us-section {
-  color: #fff; }
+  color: #fff;
+  background-size: cover; }
   .contact-us-section .section-overlay {
     padding: 100px 0;
-    background-color: rgba(5, 19, 47, 0.7); }
+    background-color: rgba(5, 19, 47, 0.2); }
   .contact-us-section .elaw-contact-form span, .contact-us-section .elaw-contact-form div {
     width: 100%;
     margin-top: 15px; }
