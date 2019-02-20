@@ -17,9 +17,10 @@ p {
   text-align: justify;
 }
 
-img{
+img {
   max-width: 100%;
 }
+
 .section-overlay, .page-header-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
@@ -121,6 +122,7 @@ header.site-header, .page-header {
 ////////////////////////////////
 .about-us-section {
   padding: 70px 0;
+
   @media only screen and (max-width: $mobile_l) {
     padding: 50px 20px;
 
@@ -141,19 +143,22 @@ header.site-header, .page-header {
 
     .grey-dots {
       min-height: 100%;
-      min-width: 100%;
+      max-width: 100%;
+      width: 100%;
       background-repeat: no-repeat;
       position: absolute;
     }
-      span.title-block{
-        min-width: 100%;
-        min-height: 100%;
-        display: block;
-        position: absolute;
-        top: -20%;
-        left: 0;
-        transform: translate(0, 50%);
-      }
+
+    span.title-block {
+      max-width: 100%;
+      min-height: 100%;
+      display: block;
+      position: absolute;
+      top: -20%;
+      left: 0;
+      transform: translate(0, 50%);
+    }
+
     .text-yellow-line {
       width: 60px;
       height: 10px;
@@ -168,12 +173,12 @@ header.site-header, .page-header {
       .grey-dots {
         height: 100%;
         max-width: 100%;
+        width: 100%;
         background-repeat: no-repeat;
         position: absolute;
-        left: 60px;
         top: -1em;
       }
-      span.title-block{
+      span.title-block {
         position: relative;
         min-height: 2em;
       }
@@ -183,9 +188,15 @@ header.site-header, .page-header {
       }
     }
   }
-
+  .about-us-description:first-letter {
+    color: #F1BC00;
+    float: left;
+    font-size: 2em;
+    line-height: 1;
+  }
   .about-us-description {
     text-align: justify;
+    line-height: 1.1;
 
     a {
       display: inline-block;

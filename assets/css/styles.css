@@ -91,11 +91,12 @@ header.site-header, .page-header {
       padding: 0 10px; }
     .about-us-section .section-title .grey-dots {
       min-height: 100%;
-      min-width: 100%;
+      max-width: 100%;
+      width: 100%;
       background-repeat: no-repeat;
       position: absolute; }
     .about-us-section .section-title span.title-block {
-      min-width: 100%;
+      max-width: 100%;
       min-height: 100%;
       display: block;
       position: absolute;
@@ -114,9 +115,9 @@ header.site-header, .page-header {
       .about-us-section .section-title .grey-dots {
         height: 100%;
         max-width: 100%;
+        width: 100%;
         background-repeat: no-repeat;
         position: absolute;
-        left: 60px;
         top: -1em; }
       .about-us-section .section-title span.title-block {
         position: relative;
@@ -124,8 +125,14 @@ header.site-header, .page-header {
       .about-us-section .section-title h4 {
         max-width: 85%;
         width: calc(100% - 70px); } }
+  .about-us-section .about-us-description:first-letter {
+    color: #F1BC00;
+    float: left;
+    font-size: 2em;
+    line-height: 1; }
   .about-us-section .about-us-description {
-    text-align: justify; }
+    text-align: justify;
+    line-height: 1.1; }
     .about-us-section .about-us-description a {
       display: inline-block;
       width: 100%;
