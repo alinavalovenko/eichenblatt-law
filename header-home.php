@@ -31,6 +31,7 @@
                         </div>
                         <div class="col-sm-4 text-right">
 							<?php elaw_get_menu_list( 'right-menu', 'elaw-right-menu' ); ?>
+                            <div class="hamburger"><span></span></div>
                         </div>
                     </div>
                 </div>

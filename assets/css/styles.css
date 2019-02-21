@@ -82,7 +82,8 @@ header.site-header, .page-header {
         padding: 0 40px 0 20px; }
         @media only screen and (max-width: 425px) {
           header.site-header .banner-section .elaw-link span.yellow-text, .page-header .banner-section .elaw-link span.yellow-text {
-            padding: 0 10px; } }
+            padding: 0 10px;
+            width: calc(100% - 40px); } }
       @media only screen and (max-width: 425px) {
         header.site-header .banner-section .elaw-link span.text-yellow-line, .page-header .banner-section .elaw-link span.text-yellow-line {
           width: 30px; } }
@@ -465,3 +466,12 @@ footer.site-footer-wrap {
 
 .page-title {
   padding: 25% 0 3em 0; }
+
+@media only screen and (max-width: 425px) {
+  nav.elaw-right-menu {
+    display: none; }
+  nav.elaw-left-menu {
+    display: none; } }
+
+.mobile-menu-wrap {
+  display: none; }

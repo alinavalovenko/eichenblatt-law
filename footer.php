@@ -16,5 +16,6 @@
 </footer>
 </div><!-- site-wrapper end -->
 <?php wp_footer(); ?>
+<?php get_template_part('template-parts/nav/mobile'); ?>
 </body>
 </html>
