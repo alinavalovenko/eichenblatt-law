@@ -59,8 +59,11 @@
             <div class="container attorneys-section">
                 <div class="row attorneys-introduction">
                     <div class="col-xs-12 col-sm-3 section-title">
+                        <div class="grey-dots" <?php set_section_background( ELAW_GREY_DOTS ); ?>></div>
+                        <span class="title-block">
                         <span class="text-yellow-line"></span>
-                        <h2><?php echo $our_attorneys_data['section_title']; ?></h2>
+                        <h3><?php echo $our_attorneys_data['section_title']; ?></h3>
+                        </span>
                     </div>
                     <div class="col-xs-12 col-sm-6 description">
                         <p><?php echo $our_attorneys_data['section_description']; ?></p></div>
