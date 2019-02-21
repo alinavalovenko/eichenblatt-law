@@ -316,27 +316,39 @@ header.site-header, .page-header {
     min-width: 250px;
     text-align: center; }
 
-.experience-section .section-overlay {
-  padding: 100px 0; }
-  .experience-section .section-overlay h2:after {
-    border-bottom: solid 2px #F1BC00;
-    width: 100px;
-    content: ' ';
-    height: 2px;
-    line-height: 1em;
-    display: block;
-    text-align: center;
-    margin: 20px auto; }
-  .experience-section .section-overlay a {
-    border: solid 2px;
-    margin: 30px auto;
-    display: block;
-    max-width: 250px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 10px;
-    white-space: nowrap; }
+.experience-section {
+  position: relative; }
+  .experience-section .grey-dots {
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -99;
+    top: -50%;
+    width: 20%;
+    height: 100%;
+    max-width: 100%;
+    overflow: inherit;
+    right: 0; }
+  .experience-section .section-overlay {
+    padding: 100px 0; }
+    .experience-section .section-overlay h2:after {
+      border-bottom: solid 2px #F1BC00;
+      width: 100px;
+      content: ' ';
+      height: 2px;
+      line-height: 1em;
+      display: block;
+      text-align: center;
+      margin: 20px auto; }
+    .experience-section .section-overlay a {
+      border: solid 2px;
+      margin: 30px auto;
+      display: block;
+      max-width: 250px;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 10px;
+      white-space: nowrap; }
 
 .blog-section {
   margin: 60px auto; }

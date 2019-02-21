@@ -103,6 +103,7 @@
 
 		<?php if ( $experience ): $experience_data = get_field( 'experience_options' ); ?>
             <div class="experience-section text-center" <?php set_section_background( ELAW_BG_IMG_URL ); ?>>
+                <div class="grey-dots" <?php set_section_background( ELAW_GREY_DOTS ); ?>></div>
                 <div class="section-overlay">
                     <h2><?php echo $experience_data['section_title'] ?></h2>
                     <div class="description">

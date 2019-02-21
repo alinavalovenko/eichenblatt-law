@@ -466,6 +466,18 @@ header.site-header, .page-header {
 }
 
 .experience-section {
+  position: relative;
+  .grey-dots{
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -99;
+    top: -50%;
+    width: 20%;
+    height: 100%;
+    max-width: 100%;
+    overflow: inherit;
+    right: 0;
+  }
 
   .section-overlay {
     padding: 100px 0;
