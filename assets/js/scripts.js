@@ -1,0 +1,1 @@
+jQuery(document).ready(function(a){var e=a(".hamburger"),i=a(".mobile-menu-wrap");e.click(function(a){i.hasClass("inactive")?(i.removeClass("inactive"),i.addClass("active")):(i.removeClass("active"),i.addClass("inactive"))})});

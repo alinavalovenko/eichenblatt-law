@@ -467,15 +467,20 @@ footer.site-footer-wrap {
 .page-title {
   padding: 25% 0 3em 0; }
 
-.mobile-menu-wrap {
-  display: none; }
+.inactive {
+  display: none !important; }
+
+.active {
+  display: block !important; }
 
 @media only screen and (max-width: 425px) {
   header.site-header .header-bar {
     padding: 40px 0 20px;
     position: fixed;
     width: 100%;
-    background-color: black; }
+    background-color: black;
+    z-index: 100;
+    opacity: 1; }
   header.site-header .banner-section {
     padding: 40% 0; }
   nav.elaw-right-menu {
@@ -538,4 +543,27 @@ footer.site-footer-wrap {
   .close:after {
     -webkit-transform: translateY(-50%) rotate(-45deg);
     -ms-transform: translateY(-50%) rotate(-45deg);
-    transform: translateY(-50%) rotate(-45deg); } }
+    transform: translateY(-50%) rotate(-45deg); }
+  .mobile-menu-wrap {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: #243040;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 2em; }
+    .mobile-menu-wrap nav {
+      padding: 120px 34px; }
+      .mobile-menu-wrap nav ul {
+        padding: 0;
+        margin: 0 auto; }
+        .mobile-menu-wrap nav ul li {
+          list-style-type: none; }
+          .mobile-menu-wrap nav ul li a {
+            display: block;
+            margin-bottom: 25px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8); }
+          .mobile-menu-wrap nav ul li a:hover {
+            border-bottom: solid 1px #f1bc00; } }

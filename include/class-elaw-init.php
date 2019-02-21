@@ -70,8 +70,8 @@ if ( ! class_exists( 'ELaw_Init' ) ) {
 			wp_enqueue_script( 'elaw-jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', '', '3.3.1', true );
 			wp_localize_script( 'elaw-js-prop', 'elawInit', $this->elaw_global_js_properties() );
 			wp_enqueue_script( 'elaw-libs', ELAW_ASSETS_URL . '/js/libs.min.js', array( 'elaw-jquery' ), '', true );
-			wp_enqueue_script( 'elaw-scripts', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', array( 'elaw-jquery' ), '', true );
-			wp_enqueue_script( 'elaw-scripts', ELAW_ASSETS_URL . '/js/scripts.js', array( 'elaw-scripts' ), '', true );
+			wp_enqueue_script( 'elaw-scripts-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', array( 'elaw-jquery' ), '', true );
+			wp_enqueue_script( 'elaw-scripts', ELAW_ASSETS_URL . '/js/scripts.js', array( 'elaw-jquery' ), '', true );
 		}
 
 		function elaw_global_js_properties() {
