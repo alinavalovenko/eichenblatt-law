@@ -33,6 +33,7 @@ a.site-logo {
   border-top: 1px solid;
   padding: 15px 10px;
   text-transform: uppercase;
+  word-spacing: 15px;
 }
 
 header.site-header {
@@ -85,33 +86,45 @@ header.site-header, .page-header {
   }
 
   .banner-section {
-    padding: 23% 0;
+    padding: 20% 0;
 
     h1 {
       font-size: 4em;
       line-height: 1.5em;
+      @media only screen and (max-width: $mobile_l) {
+        font-size: 3em;
+        line-height: 1em;
+      }
     }
 
     .description {
       max-width: 50%;
       font-size: 1.2em;
       padding: 30px 0 0 5%;
+      @media only screen and (max-width: $tablet) {
+        max-width: 100%;
+      }
+      @media only screen and (max-width: $laptop) {
+        max-width: 80%;
+      }
     }
 
     .elaw-link {
-      width: 100%;
-      padding: 30px 0;
+      display: block;
+      opacity: 0.9;
+      margin: 40px auto;
 
-      a {
-        display: inline-block;
-        background-color: rgba(241, 188, 0, 0.6);
-        padding: 0 10px;
-        text-transform: uppercase;
+      span.yellow-text {
+        padding: 0 40px 0 20px;
+        @media only screen and (max-width: $mobile_l) {
+          padding: 0 10px;
+        }
       }
 
-      img {
-        width: 100px;
-
+      span.text-yellow-line {
+        @media only screen and (max-width: $mobile_l) {
+          width: 30px;
+        }
       }
     }
   }
@@ -131,12 +144,17 @@ header.site-header, .page-header {
     padding: 7px;
     display: block;
     float: left;
+
+    @media only screen and (max-width: $mobile_l) {
+      width: 30px;
+    }
   }
 
   h3 {
     display: block;
     float: left;
     padding: 0 10px;
+
   }
 
   @media only screen and (max-width: $mobile_l) {
@@ -467,16 +485,26 @@ header.site-header, .page-header {
 
 .experience-section {
   position: relative;
-  .grey-dots{
+
+  .grey-dots {
     position: absolute;
     background-repeat: no-repeat;
     z-index: -99;
-    top: -50%;
+    top: -30%;
     width: 20%;
     height: 100%;
     max-width: 100%;
     overflow: inherit;
     right: 0;
+
+    @media only screen and (max-width: $mobile_l) {
+      top: -20%;
+      width: 50%;
+    }
+    @media only screen and (min-width: $mobile_l) and(max-width: $tablet) {
+      top: -20%;
+      width: 30%;
+    }
   }
 
   .section-overlay {
@@ -510,8 +538,17 @@ header.site-header, .page-header {
 .blog-section {
   margin: 60px auto;
 
-  h2 {
-    margin: 50px auto;
+  .title-block {
+    left: -55px;
+    position: relative;
+    margin-bottom: 40px;
+    @media only screen and (max-width: $mobile_l) {
+      left: 0;
+    }
+
+    h2, h3, h4 {
+      color: #000;
+    }
   }
 
   a {
@@ -519,6 +556,12 @@ header.site-header, .page-header {
     margin: 15px auto;
     color: #000;
     text-decoration: none;
+    min-height: 3em;
+
+    span.yellow-text {
+      width: calc(100% - 65px);
+
+    }
   }
 
   img {
@@ -532,8 +575,34 @@ header.site-header, .page-header {
     text-transform: capitalize;
   }
 
+  p {
+    height: 4.5em;
+    overflow: hidden;
+  }
+
 }
 
+a {
+  span.text-yellow-line {
+    width: 60px;
+    height: 0.7em;
+    border-bottom: solid 2px #F1BC00;
+    line-height: 1em;
+    display: block;
+    float: left;
+  }
+
+  span.yellow-text {
+    background-color: #F1BC00;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    color: #fff;
+    padding-left: 10px;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+}
 
 //////////////////////////////
 ////////////contact-us-section

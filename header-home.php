@@ -41,10 +41,7 @@
                     <div class="banner-section">
                         <h1><?php echo $banner_section_data['home_page_main_text'] ?></h1>
                         <div class="description"><?php echo $banner_section_data['introduction_text'] ?>
-                            <div class="elaw-link">
-                                <img src="<?php echo ELAW_LINE; ?>" alt="yellow line">
-                                <a href="<?php echo $banner_section_data['action_button_link'] ?>"><?php echo $banner_section_data['action_button_text'] ?></a>
-                            </div>
+                                <a href="<?php echo $banner_section_data['action_button_link'] ?>" class="elaw-link"><span class="text-yellow-line"></span> <span class="yellow-text"><?php echo $banner_section_data['action_button_text'] ?></span></a>
                         </div>
 
                     </div>

@@ -118,7 +118,12 @@
 
 		<?php if ( $blog_section ): $blog_section_data = get_field( 'blog_option' ); ?>
             <div class="container blog-section">
-                <h2>Blog</h2>
+                <div class="row section-title">
+                    <span class="title-block">
+                        <span class="text-yellow-line"></span>
+                        <h3>Blog</h3>
+                        </span>
+                </div>
                 <div class="row">
 					<?php $blog_list = get_blog_items();
 					if ( ! empty( $blog_list ) ):
