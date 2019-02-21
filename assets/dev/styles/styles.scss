@@ -117,6 +117,34 @@ header.site-header, .page-header {
   }
 }
 
+////////////////////////////////////
+//////// TITLE WITH A LINE/////////
+///////////////////////////////////
+.title-block {
+  height: 100%;
+
+  span.text-yellow-line {
+    width: 60px;
+    height: 10px;
+    border-bottom: solid 2px #F1BC00;
+    line-height: 1em;
+    padding: 7px;
+    display: block;
+    float: left;
+  }
+
+  h3 {
+    display: block;
+    float: left;
+    padding: 0 10px;
+  }
+
+  @media only screen and (max-width: $mobile_l) {
+    left: -30px;
+  }
+}
+
+
 /////////////////////////////////
 ////////// ABOUT US SECTION ////
 ////////////////////////////////
@@ -147,6 +175,7 @@ header.site-header, .page-header {
       width: 100%;
       background-repeat: no-repeat;
       position: absolute;
+      left: -10%;
     }
 
     span.title-block {
@@ -155,7 +184,7 @@ header.site-header, .page-header {
       display: block;
       position: absolute;
       top: -20%;
-      left: 0;
+      left: -15%;
       transform: translate(0, 50%);
     }
 
@@ -188,12 +217,14 @@ header.site-header, .page-header {
       }
     }
   }
+
   .about-us-description:first-letter {
     color: #F1BC00;
     float: left;
     font-size: 2em;
     line-height: 1;
   }
+
   .about-us-description {
     text-align: justify;
     line-height: 1.1;
@@ -232,6 +263,21 @@ header.site-header, .page-header {
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    .section-title {
+      .title-block {
+        left: -55px;
+        position: relative;
+        padding-bottom: 60px;
+        padding-top: 30px;
+
+        @media only screen and (max-width: $mobile_l) {
+          left: -30px;
+          padding-bottom: 30px;
+          padding-top: 0px;
+        }
+      }
+    }
   }
 
   .practice-item {

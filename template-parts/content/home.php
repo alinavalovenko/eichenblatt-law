@@ -32,8 +32,10 @@
                 <div class="section-overlay">
                     <div class="container">
                         <div class="row section-title">
+                                                    <span class="title-block">
                             <span class="text-yellow-line"></span>
-                            <h4><?php echo $practice_areas_data['section_title']; ?></h4>
+                            <h3><?php echo $practice_areas_data['section_title']; ?></h3>
+                                                    </span>
                         </div>
 						<?php if ( ! empty( $practice_areas_data['practice_areas_items'] ) ): ?>
                             <div class="row">

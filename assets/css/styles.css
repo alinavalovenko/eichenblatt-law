@@ -74,6 +74,24 @@ header.site-header, .page-header {
       header.site-header .banner-section .elaw-link img, .page-header .banner-section .elaw-link img {
         width: 100px; }
 
+.title-block {
+  height: 100%; }
+  .title-block span.text-yellow-line {
+    width: 60px;
+    height: 10px;
+    border-bottom: solid 2px #F1BC00;
+    line-height: 1em;
+    padding: 7px;
+    display: block;
+    float: left; }
+  .title-block h3 {
+    display: block;
+    float: left;
+    padding: 0 10px; }
+  @media only screen and (max-width: 425px) {
+    .title-block {
+      left: -30px; } }
+
 .about-us-section {
   padding: 70px 0; }
   @media only screen and (max-width: 425px) {
@@ -94,14 +112,15 @@ header.site-header, .page-header {
       max-width: 100%;
       width: 100%;
       background-repeat: no-repeat;
-      position: absolute; }
+      position: absolute;
+      left: -10%; }
     .about-us-section .section-title span.title-block {
       max-width: 100%;
       min-height: 100%;
       display: block;
       position: absolute;
       top: -20%;
-      left: 0;
+      left: -15%;
       transform: translate(0, 50%); }
     .about-us-section .section-title .text-yellow-line {
       width: 60px;
@@ -159,6 +178,16 @@ header.site-header, .page-header {
   .practice-section .container {
     padding-top: 60px;
     padding-bottom: 60px; }
+    .practice-section .container .section-title .title-block {
+      left: -55px;
+      position: relative;
+      padding-bottom: 60px;
+      padding-top: 30px; }
+      @media only screen and (max-width: 425px) {
+        .practice-section .container .section-title .title-block {
+          left: -30px;
+          padding-bottom: 30px;
+          padding-top: 0px; } }
   .practice-section .practice-item img {
     width: auto;
     height: 25%;
