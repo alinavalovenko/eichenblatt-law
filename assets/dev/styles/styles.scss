@@ -684,14 +684,95 @@ footer.site-footer-wrap {
 ////////////////////////////////////
 ///////////   MOBILE MENU     /////
 ///////////////////////////////////
+
+.mobile-menu-wrap {
+  display: none;
+}
+
 @media only screen and (max-width: $mobile_l){
+  header.site-header .header-bar{
+    padding: 40px 0 20px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,1);
+    z-index: 100;
+  }
+  header.site-header .banner-section{
+    padding: 40% 0;
+  }
   nav.elaw-right-menu{
     display: none;
   }
   nav.elaw-left-menu{
     display: none;
   }
-}
-.mobile-menu-wrap {
-  display: none;
+  .hamburger {
+    position: fixed;
+    z-index: 4;
+    top: 40px;
+    right: 30px;
+    width: 45px;
+    height: 34px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    span { position: relative;
+      display: block;
+      width: 45px;
+      height: 6px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+    span:before,
+    span:after {
+      display: block;
+      width: 45px;
+      height: 6px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+
+    span:before, .hamburger span:after {
+      content: '';
+      position: absolute;
+    }
+
+    span:before { bottom: -14px; }
+
+    span:after { bottom: -28px; }
+
+  }
+  .close {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 45px;
+    height: 34px;
+    cursor: pointer;
+  }
+
+  .close:before, .close:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 6px;
+    top: 50%;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  .close:before {
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .close:after {
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
