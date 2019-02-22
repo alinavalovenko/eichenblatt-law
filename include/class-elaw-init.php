@@ -103,6 +103,17 @@ if ( ! class_exists( 'ELaw_Init' ) ) {
 				'before_title'  => '<h4 class="elaw-footer-widget-title">',
 				'after_title'   => "</h4>\n",
 			) );
+
+			register_sidebar( array(
+				'name'          => esc_html__( 'Primary Sidebar' ),
+				'id'            => "primary-sidebar-area",
+				'description'   => '',
+				'class'         => 'elaw-primary-sidebar',
+				'before_widget' => '<div class="sidebar-widget">',
+				'after_widget'  => "</div>\n",
+				'before_title'  => ' <div class="title-block"><span class="text-yellow-line"></span><h4 class="sidebar-widget-title">',
+				'after_title'   => "</h4></div>\n",
+			) );
 		}
 	}
 
