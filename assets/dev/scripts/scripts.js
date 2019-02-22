@@ -6,6 +6,7 @@ jQuery(document).ready(function ($) {
         if (mobileMenuWrap.hasClass('inactive')) {
             mobileMenuWrap.removeClass('inactive');
             mobileMenuWrap.addClass('active');
+
         } else {
             mobileMenuWrap.removeClass('active');
             mobileMenuWrap.addClass('inactive');

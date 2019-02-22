@@ -490,7 +490,7 @@ footer.site-footer-wrap {
   .hamburger {
     position: fixed;
     z-index: 4;
-    top: 40px;
+    top: 25px;
     right: 30px;
     width: 45px;
     height: 34px;
@@ -503,22 +503,26 @@ footer.site-footer-wrap {
       position: relative;
       display: block;
       width: 45px;
-      height: 6px;
+      height: 1px;
       background-color: #fff;
       border-radius: 2px; }
-    .hamburger span:before,
+    .hamburger span:before {
+      display: block;
+      width: 45px;
+      height: 1px;
+      background-color: #fff;
+      border-radius: 2px;
+      bottom: -14px;
+      content: '';
+      position: absolute; }
     .hamburger span:after {
       display: block;
       width: 45px;
-      height: 6px;
+      height: 1px;
       background-color: #fff;
-      border-radius: 2px; }
-    .hamburger span:before, .hamburger .hamburger span:after {
+      border-radius: 2px;
       content: '';
-      position: absolute; }
-    .hamburger span:before {
-      bottom: -14px; }
-    .hamburger span:after {
+      position: absolute;
       bottom: -28px; }
   .close {
     position: fixed;
@@ -527,7 +531,16 @@ footer.site-footer-wrap {
     width: 45px;
     height: 34px;
     cursor: pointer; }
-  .close:before, .close:after {
+  .close:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 6px;
+    top: 50%;
+    background-color: white;
+    border-radius: 2px; }
+  .close:after {
     content: '';
     position: absolute;
     display: block;

@@ -685,11 +685,12 @@ footer.site-footer-wrap {
 ///////////   MOBILE MENU     /////
 ///////////////////////////////////
 
-.inactive{
-  display: none!important;
+.inactive {
+  display: none !important;
 }
-.active{
-  display: block!important;
+
+.active {
+  display: block !important;
 }
 
 
@@ -714,7 +715,7 @@ footer.site-footer-wrap {
   .hamburger {
     position: fixed;
     z-index: 4;
-    top: 40px;
+    top: 25px;
     right: 30px;
     width: 45px;
     height: 34px;
@@ -728,33 +729,33 @@ footer.site-footer-wrap {
       position: relative;
       display: block;
       width: 45px;
-      height: 6px;
+      height: 1px;
       background-color: #fff;
       border-radius: 2px;
     }
 
-    span:before,
-    span:after {
+    span:before {
       display: block;
       width: 45px;
-      height: 6px;
+      height: 1px;
       background-color: #fff;
       border-radius: 2px;
-    }
-
-    span:before, .hamburger span:after {
+      bottom: -14px;
       content: '';
       position: absolute;
     }
 
-    span:before {
-      bottom: -14px;
-    }
-
     span:after {
+      display: block;
+      width: 45px;
+      height: 1px;
+      background-color: #fff;
+      border-radius: 2px;
+      content: '';
+      position: absolute;
       bottom: -28px;
-    }
 
+    }
   }
   .close {
     position: fixed;
@@ -764,7 +765,17 @@ footer.site-footer-wrap {
     height: 34px;
     cursor: pointer;
   }
-  .close:before, .close:after {
+  .close:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 6px;
+    top: 50%;
+    background-color: white;
+    border-radius: 2px;
+  }
+  .close:after {
     content: '';
     position: absolute;
     display: block;
@@ -800,15 +811,18 @@ footer.site-footer-wrap {
       ul {
         padding: 0;
         margin: 0 auto;
+
         li {
           list-style-type: none;
+
           a {
             display: block;
             margin-bottom: 25px;
             text-decoration: none;
             color: rgba(255, 255, 255, 0.8);
           }
-          a:hover{
+
+          a:hover {
             border-bottom: solid 1px #f1bc00;
           }
         }

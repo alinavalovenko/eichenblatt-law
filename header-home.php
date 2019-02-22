@@ -31,7 +31,9 @@
                         </div>
                         <div class="col-sm-4 text-right">
 							<?php elaw_get_menu_list( 'right-menu', 'elaw-right-menu' ); ?>
-                            <div class="hamburger"><span></span></div>
+                            <div class="hamburger"><span></span>
+                                <div class="close inactive"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -42,7 +44,9 @@
                     <div class="banner-section">
                         <h1><?php echo $banner_section_data['home_page_main_text'] ?></h1>
                         <div class="description"><?php echo $banner_section_data['introduction_text'] ?>
-                                <a href="<?php echo $banner_section_data['action_button_link'] ?>" class="elaw-link"><span class="text-yellow-line"></span> <span class="yellow-text"><?php echo $banner_section_data['action_button_text'] ?></span></a>
+                            <a href="<?php echo $banner_section_data['action_button_link'] ?>" class="elaw-link"><span
+                                        class="text-yellow-line"></span> <span
+                                        class="yellow-text"><?php echo $banner_section_data['action_button_text'] ?></span></a>
                         </div>
 
                     </div>
