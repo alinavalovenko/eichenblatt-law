@@ -18,8 +18,9 @@
                 </article>
 
 			<?php endwhile; ?>
-
         </main>
+	    <?php comments_template(); ?>
+
     </div>
     <div class="row">
         <div class="container blog-section">

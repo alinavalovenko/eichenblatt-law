@@ -18,7 +18,13 @@
 </head>
 <body <?php body_class(); ?> >
 <div class="site-wrapper">
-    <header class="page-header" <?php set_section_background(); ?>>
+    <?php $blog_page_id = get_option( 'page_for_posts' );
+    $image_url = get_the_post_thumbnail_url();
+    if($blog_page_id && is_home()){
+        $image_url = get_the_post_thumbnail_url($blog_page_id);
+    }
+    ?>
+    <header class="page-header" <?php set_section_background($image_url); ?>>
         <div class="page-header-overlay">
             <div class="header-bar">
                 <div class="container">
