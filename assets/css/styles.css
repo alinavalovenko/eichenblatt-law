@@ -665,6 +665,8 @@ footer.site-footer-wrap {
     color: #999999; }
     .elaw-comments-wrap a:hover {
       color: #000; }
+  .elaw-comments-wrap .reply {
+    display: none; }
   .elaw-comments-wrap .comment-author {
     margin: 15px 0; }
     .elaw-comments-wrap .comment-author span.fn {
@@ -672,15 +674,30 @@ footer.site-footer-wrap {
       padding-right: 20px; }
     .elaw-comments-wrap .comment-author .comment-meta a {
       font-size: 0.8em; }
-  .elaw-comments-wrap .comment-form .comment-notes {
-    display: none; }
-  .elaw-comments-wrap .comment-form .comment-form-comment textarea {
-    width: 100%;
-    height: 100px;
-    resize: none; }
-  .elaw-comments-wrap .comment-form .comment-form-author {
-    display: none; }
-  .elaw-comments-wrap .comment-form .comment-form-email {
-    display: none; }
-  .elaw-comments-wrap .comment-form .form-submit {
-    display: none; }
+  .elaw-comments-wrap .comment-form {
+    position: relative; }
+    .elaw-comments-wrap .comment-form .comment-notes {
+      display: none; }
+    .elaw-comments-wrap .comment-form .comment-form-comment textarea {
+      width: 100%;
+      height: 100px;
+      resize: none; }
+    .elaw-comments-wrap .comment-form .comment-form-author {
+      display: none;
+      width: 30%; }
+    .elaw-comments-wrap .comment-form .comment-form-email {
+      display: none;
+      width: 30%; }
+    .elaw-comments-wrap .comment-form .form-submit {
+      display: none;
+      width: calc(100% - 62%); }
+    .elaw-comments-wrap .comment-form .comment-active-field {
+      display: inline-block !important;
+      position: relative; }
+      .elaw-comments-wrap .comment-form .comment-active-field .submit {
+        text-align: left;
+        background-color: #333333;
+        color: #fff;
+        min-width: 200px;
+        text-transform: uppercase;
+        padding: 0 15px; }
